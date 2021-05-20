@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Reggae One", cursive;
+}
+body {
+  overflow: hidden;
+}
+.login-page {
+  width: 100%;
+  min-height: 110vh;
+  background: radial-gradient(rgb(69, 170, 238), rgba(12, 23, 3, 1));
+}
+.title {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px 0px 50px;
+}
+.title h1 {
+  margin: 30px;
+  font-size: 40px;
+}
+#logo {
+  width: 70px;
+}
+#footballer {
+  width: 500px;
+  position: absolute;
+  left: 10%;
+}
+.button {
+  position: absolute;
+  display: flex;
+  height: 150px;
+  flex-direction: column;
+  justify-content: space-between;
+  right: 15%;
+  bottom: 15%;
+}
+
+#login,
+#create,
+#enter {
+  height: 40px;
+  width: 230px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 20px;
+}
+#login {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
