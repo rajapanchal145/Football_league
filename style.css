@@ -9,7 +9,8 @@
 body {
   overflow: hidden;
 }
-.login-page {
+.login-page,
+.create_league {
   width: 100%;
   min-height: 110vh;
   background: radial-gradient(rgb(69, 170, 238), rgba(12, 23, 3, 1));
@@ -53,8 +54,35 @@ body {
   color: white;
   border-radius: 20px;
 }
+#login a,
+#create a,
+#enter a {
+  text-decoration: none;
+  color: white;
+}
 #login {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.wrapper {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  margin: 100px auto;
+  padding: 30px;
+}
+
+.wrapper .form .input_field {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.wrapper .form .input_field label {
+  width: 350px;
+  margin-right: 10px;
+}
+.wrapper .form .input_field .input {
+  width: 100%;
+  outline: none;
 }
