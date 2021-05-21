@@ -11,7 +11,8 @@ body {
 }
 .login-page,
 .create_league,
-.enter-league {
+.enter-league,
+.team-selection {
   width: 100%;
   min-height: 110vh;
   background: radial-gradient(rgb(69, 170, 238), rgba(12, 23, 3, 1));
@@ -112,4 +113,34 @@ body {
   text-align: center;
   padding: 5px;
   outline: none;
+}
+#positions {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+}
+
+#positions th,
+#positions td {
+  padding: 8px;
+  text-align: center;
+}
+#positions tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+#positions tr:nth-child(odd) {
+  background-color: rgb(77, 127, 192);
+}
+
+#positions th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: white;
+  background-color: black;
+}
+.enter-button {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
 }
