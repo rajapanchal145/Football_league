@@ -14,7 +14,8 @@ body {
 .enter-league,
 .team-selection,
 .groups,
-.point_table_groups {
+.point_table_groups,
+.knockout {
   width: 100%;
   min-height: 110vh;
   background: radial-gradient(rgb(69, 170, 238), rgba(12, 23, 3, 1));
@@ -206,4 +207,36 @@ body {
 }
 .team #team-logo {
   height: 18px;
+}
+.div-1 {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.div-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px;
+}
+.div-2 h1 {
+  margin: 20px;
+}
+.box {
+  width: 250px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: aliceblue;
+}
+#trophy {
+  width: 150px;
+}
+.trophy {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
 }
