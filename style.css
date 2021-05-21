@@ -12,7 +12,8 @@ body {
 .login-page,
 .create_league,
 .enter-league,
-.team-selection {
+.team-selection,
+.groups {
   width: 100%;
   min-height: 110vh;
   background: radial-gradient(rgb(69, 170, 238), rgba(12, 23, 3, 1));
@@ -114,27 +115,28 @@ body {
   padding: 5px;
   outline: none;
 }
-#positions {
+#table {
   border-collapse: collapse;
   width: 80%;
   margin: auto;
+  font-size: small;
 }
 
-#positions th,
-#positions td {
-  padding: 8px;
+#table th,
+#table td {
+  padding: 6px;
   text-align: center;
 }
-#positions tr:nth-child(even) {
+#table tr:nth-child(even) {
   background-color: whitesmoke;
 }
-#positions tr:nth-child(odd) {
+#table tr:nth-child(odd) {
   background-color: rgb(77, 127, 192);
 }
 
-#positions th {
-  padding-top: 12px;
-  padding-bottom: 12px;
+#table th {
+  padding-top: 8px;
+  padding-bottom: 8px;
   color: white;
   background-color: black;
 }
@@ -143,4 +145,21 @@ body {
   left: 50%;
   bottom: 10px;
   transform: translateX(-50%);
+}
+.tables {
+  height: 500px;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 30px 170px 30px 170px;
+}
+.A {
+  grid-row: 2/3;
+}
+.B {
+  grid-row: 4/5;
+}
+.tables h1 {
+  font-size: large;
+  text-align: center;
 }
