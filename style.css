@@ -10,7 +10,8 @@ body {
   overflow: hidden;
 }
 .login-page,
-.create_league {
+.create_league,
+.enter-league {
   width: 100%;
   min-height: 110vh;
   background: radial-gradient(rgb(69, 170, 238), rgba(12, 23, 3, 1));
@@ -97,4 +98,14 @@ body {
   color: wheat;
   font-size: 18px;
   cursor: pointer;
+}
+
+#input {
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  padding: 5px;
+  outline: none;
 }
